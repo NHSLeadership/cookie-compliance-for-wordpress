@@ -14,6 +14,7 @@ class Activate {
 	 *
 	 * @since    1.0.0
 	 */
+	
 	public static function activate() {
 
 		// allow for flushing the rewrite rules once after init - used on pub.php

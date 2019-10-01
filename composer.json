@@ -5,15 +5,28 @@
     "minimum-stability": "dev",
     "type": "wordpress-plugin",
     "require": {
-        "composer/installers": "^1.0"
+        "composer/installers": "^1.0",
+        "phpunit/phpunit": "^7.0",
+        "brain/monkey": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
             "CCFW\\": "./includes"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "CCFW\\Tests\\": "tests/"
+        }
+    },
     "authors": [{
         "name": "Minstry of Justice",
         "email": "wordpress@digital.justice.gov.uk"
-    }]
+    }],
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit",
+            "vendor/bin/phpcs"
+        ]
+      }
 }
