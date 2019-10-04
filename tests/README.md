@@ -9,6 +9,9 @@ This installs Composer dependancies into the current directory
 
 ## Running Unit tests
 Run: `docker run -v $(pwd):/app --rm phpunit/phpunit:latest --bootstrap ExampleClass.php ExampleTest.php`
+or
+locally
+`vendor/bin/phpunit tests/testExample.php includes/activate.php`
 
 `ExampleClass.php` being the class you want to test
 `ExampleTest.php` the test class

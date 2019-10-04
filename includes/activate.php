@@ -17,7 +17,7 @@ class Activate {
 	
 	public static function activate() {
 
-		// allow for flushing the rewrite rules once after init - used on pub.php
+		//allow for flushing the rewrite rules once after init - used on pub.php
 		if ( ! get_option( 'ccfw_flush_rewrite_rules_flag' ) ) {
 			add_option( 'ccfw_flush_rewrite_rules_flag', true );
 		};
